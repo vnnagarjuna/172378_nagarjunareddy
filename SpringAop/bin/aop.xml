@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans   
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+
+<bean name="traingle" class="com.springaop.a.Traingle">
+<property name="Name" value="Traingle name"/>
+</bean>
+<bean name ="circle" class="com.springaop.a.Circle">
+<property name="Name" value="Circle name"/>
+</bean>
+<bean name ="shapeService" class="com.springaop.service.ShapeService" autowire="byName">
+
+</bean>
+  </beans>
