@@ -1,0 +1,110 @@
+package com.assignment.question1;
+
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+
+public class Customer implements InitializingBean,DisposableBean,ApplicationContextAware{
+    private int customerId;
+	private String customerName;
+	 private int customerContact;
+	 private Address customerAddress;
+	public int getCustomerId() {
+		return customerId;
+	}
+	public void setCustomerId(int customerId) {
+		this.customerId = customerId;
+	}
+	public String getCustomerName() {
+		return customerName;
+	}
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+	public int getCustomerContact() {
+		return customerContact;
+	}
+	public void setCustomerContact(int customerContact) {
+		this.customerContact = customerContact;
+	}
+	public Address getCustomerAddress() {
+		return customerAddress;
+	}
+	public void setCustomerAddress(Address customerAddress) {
+		this.customerAddress = customerAddress;
+	}
+	
+	 public Customer(int customerId, String customerName, int customerContact, Address customerAddress) {
+		super();
+		this.customerId = customerId;
+		this.customerName = customerName;
+		this.customerContact = customerContact;
+		this.customerAddress = customerAddress;
+	}
+	public void getCustomer()
+	 {
+		 System.out.println("CustomerId is:"+getCustomerId());
+		 System.out.println("CustomerName is:"+getCustomerName());
+		 System.out.println("CustomerContact is:"+getCustomerContact());
+		 System.out.println("Customer Address is:"+getCustomerAddress().getStreet()+"  "+getCustomerAddress().getCity()+" "+getCustomerAddress().getZipcode()+" "+getCustomerAddress().getState()+" "+getCustomerAddress().getCountry());
+	 }
+	@Override
+	public void destroy() throws Exception {
+		// TODO Auto-generated method stub
+		System.out.println("Destroyed Customer");
+	}
+	@Override
+	public void afterPropertiesSet() throws Exception {
+		// TODO Auto-generated method stub
+		System.out.println("Hi customer");
+	}
+		public void myInit()
+		{
+			System.out.println("MyInit() called...");
+		}
+		public void myCleanUp() {
+			System.out.println("Cleaned...");
+		}
+		@Override
+		public void setApplicationContext(ApplicationContext context) throws BeansException {
+			System.out.println("ApplicationContextAware invoked....");
+			System.out.println(context);
+		}
+}
+-------------------------------------------------spring.xml---------------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+    "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+<bean id="address" class="com.assignment.question1.Address">
+<constructor-arg  value="Brookefiled"/>
+<constructor-arg  value="Bengaluru"/>
+<constructor-arg type="int" value="560037"/>
+<constructor-arg  value="Karnataka"/>
+<constructor-arg  value="India"/>
+</bean>
+<bean id="customer" class="com.assignment.question1.Customer" init-method="myInit" destroy-method="myCleanUp">
+<constructor-arg  type="int" value="123"/>
+<constructor-arg value="raja"/>
+<constructor-arg  type="int" value="12345"/>
+<constructor-arg  ref="address"/>
+</bean>
+</beans>
+-----------------------------------------------ques7----------------------------
+mport org.springframework.expression.Expression;
+import org.springframework.expression.ExpressionParser;
+import org.springframework.expression.spel.standard.SpelExpressionParser;
+
+public class SpelTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ExpressionParser parser = new SpelExpressionParser();
+		Expression exp = parser.parseExpression("'Hello World'");
+		String message = (String) exp.getValue();
+		System.out.println(message);
+	}
+
+}

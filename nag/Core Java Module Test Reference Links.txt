@@ -1,0 +1,71 @@
+Java8 mcq
+~~~~~~~
+https://www.javamadesoeasy.com/2015/10/java-8-mcq-multiple-choice-questions.html
+http://www.allindiaexams.in/engineering/cse/java-8-mcq-quiz-java-8-online-test
+
+
+exception handling mcq
+~~~~~~~~~~~~~~~
+http://www.allindiaexams.in/engineering/cse/java-questions-and-answers/exception-handling-mcq
+https://www.javamadesoeasy.com/2015/10/exception-handling-quiz-in-java.html
+https://www.examveda.com/java-program/practice-mcq-question-on-exceptions/
+https://www.siteforinfotech.com/2017/09/top-20-mcq-questions-exception-handling-java.html
+
+
+java annotations
+~~~~~~~~~~~
+http://javaquizes.blogspot.com/2014/09/quiz-java-annotations.html
+http://java.meritcampus.com/core-java-questions
+http://www.bullraider.com/quiz/core-java-quiz/java-annotation
+
+
+collection framework
+~~~~~~~~~~~~~
+https://www.javamadesoeasy.com/2015/10/collection-java-mcq-150-multiple-choice.html
+https://www.techbeamers.com/java-collections-quiz-for-experienced/
+
+
+access modifiers
+~~~~~~~~~~
+https://simplesnippets.tech/access-modifiers-in-java/
+
+
+inhertiance
+~~~~~~~
+https://www.interviewsansar.com/2017/05/08/mcq-multiple-choice-questions-inheritance-java/
+https://www.examveda.com/java-program/practice-mcq-question-on-inheritence/
+https://www.atnyla.com/general-knowledge/90/207
+http://sumtotalz.com/TotalAppsWorks/Java/JAV_Inher/popquiz.htm
+https://javaconceptoftheday.com/java-inheritance-practice-coding-questions/
+
+interface
+~~~~~
+https://www.interviewsansar.com/2018/03/25/mcq-on-interfaces-in-java/
+http://www.allindiaexams.in/engineering/cse/java-questions-and-answers/interfaces
+https://www.examveda.com/java-program/practice-mcq-question-on-interfaces-and-abstract-classes/
+https://www.siteforinfotech.com/2017/09/mcq-inheritance-package-interface-java.html
+
+Lambda expression
+~~~~~~~~~~~~
+https://www.codercanyon.com/quiz/45156968/lntroduction-to-lambda-expressions
+https://javabeat.net/ocajp-lambda-practice-questions/
+https://www.programcreek.com/2013/09/top-10-questions-for-java-collections/
+
+
+core java mcq
+~~~~~~~~~
+https://codingcompiler.com/core-java-multiple-choice-questions-answers/
+https://www.techbeamers.com/java-collections-quiz-for-experienced/
+
+
+Coding Test
+~~~~~~~~
+https://www.surveygizmo.com/s3/4548920/Oracle-Practice-Quiz-Oracle-Certified-Associate-OCA-Java-Programmer-Quiz-1
+https://www.whizlabs.com/ocajp-scja/
+https://blogs.oracle.com/certification/test-your-java-knowledge-with-free-sample-questions
+http://www.simulationexams.com/SampleQuestions/java-certification/scjp/scjp_q6.htm
+
+Generics
+~~~~~~
+http://www.allindiaexams.in/engineering/cse/java-generics-mcq-quiz-java-generics-online-test
+https://nikojava.wordpress.com/2008/10/09/scjp-mock-exam-for-generics/
